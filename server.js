@@ -61,4 +61,4 @@ app.delete('/', async (req, res) => {
 
 
 // Export the Express app for Vercel
-module.exports = app;
+export default app;
