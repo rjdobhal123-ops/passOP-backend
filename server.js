@@ -21,7 +21,9 @@ const dbname=process.env.DB_NAME
 const app = express();
 
 //Middleware
-app.use(cors());
+app.use(cors({
+    origin: "https://pass-op-frontend-red.vercel.app/"
+}));
 app.use(bodyparser.json());
 
 
